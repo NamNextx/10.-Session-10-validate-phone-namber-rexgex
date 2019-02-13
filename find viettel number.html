@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>find viettel namber</title>
+</head>
+<body>
+
+<script>
+    /*Khai báo mảng bao gồm một số các số điện thoại có sẵn
+    Khai báo biểu thức chính quy để kiểm tra số điện thoại Viettel
+    Duyệt qua các mảng để kiểm tra*/
+    var arr = [867973348,357592580,347582642,368933572,867741192,382232166,393136732,868642630,342413665,394126061,336568648,332706385];
+
+    function check(arr){
+        let regex=/((3[3-6])|(8[3-9]))([0-9]{7})\b/
+
+        for (let i=0;i<arr.length;i++){
+            if (regex.test(arr[i])){
+                alert(arr[i]);
+            }
+        }
+    }
+
+    check(arr);
+
+
+
+</script>
+
+</body>
+</html>
